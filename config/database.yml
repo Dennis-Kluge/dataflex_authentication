@@ -18,10 +18,11 @@ test:
   pool: 5
   timeout: 5000
 
-production:
-  adapter: postgresql
-  encoding: unicode
-  database: d4rteqjlrr21me
-  pool: 5
-  username: irpoudxveatnns
-  password:
+# production:
+#   adapter: postgresql
+#   encoding: unicode
+#   database: d4rteqjlrr21me
+#   pool: 5
+#   username: irpoudxveatnns
+#   password:
+#   port: 5432
