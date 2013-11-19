@@ -3,5 +3,11 @@
   <h5 class="subheader"></h5>
 
   <blockquote>The First wealth is health.<cite>Ralph Waldo Emerson</cite></blockquote>
-  <p>Herzlich Willkommen bei DataFlex - <%= current_user.email %></p>  
+  <p>Herzlich Willkommen bei DataFlex</p>  
+</div>
+
+<div class="row">
+  <% if current_user %>
+    <p>Du bist: <%= current_user.email %></p>
+  <% end %>
 </div>
