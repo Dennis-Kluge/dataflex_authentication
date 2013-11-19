@@ -1,5 +1,12 @@
 DataflexAuthentication::Application.routes.draw do
   devise_for :users
+
+  devise_scope :user do
+    get "/login"  => "devise/sessions#new"
+    get "/logout" => "devise/sessions#destroy"
+    get "/signup" => "devise/registrations#new"
+  end  
+  
   root "welcome#index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

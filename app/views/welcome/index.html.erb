@@ -1,6 +1,13 @@
-<h1h>DataFlex</h1>
-<p>Hello World!</p>
+<div class="row">
+  <h1>DataFlex <small>Für eine bessere Gesundheit.</small></h1>
+  <h5 class="subheader"></h5>
 
-<% if current_user %>
-  <p>Hello User: <%= current_user.email %></p>
-<% end %>
+  <blockquote>The First wealth is health.<cite>Ralph Waldo Emerson</cite></blockquote>
+  <p>Herzlich Willkommen bei DataFlex</p>  
+</div>
+
+<div class="row">
+  <% if current_user %>
+    <p>Du bist: <%= current_user.email %></p>
+  <% end %>
+</div>
