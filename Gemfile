@@ -30,6 +30,9 @@ gem 'jbuilder', '~> 1.2'
 # Authentication
 gem 'devise'
 
+# CSS and stuff
+gem 'zurb-foundation'
+
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
