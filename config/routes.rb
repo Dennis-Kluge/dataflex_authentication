@@ -1,4 +1,8 @@
 DataflexAuthentication::Application.routes.draw do
+  get "user_profiles/index"
+
+  resources :user_profiles, path: "profile"
+
   devise_for :users
 
   devise_scope :user do

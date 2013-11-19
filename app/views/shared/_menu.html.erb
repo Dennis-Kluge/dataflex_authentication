@@ -23,7 +23,7 @@
       <% if current_user %>
         <li class="has-dropdown"><a href="#"><%= current_user.email %></a>
           <ul class="dropdown">
-            <li><a href="#">Profile</a></li>
+            <li><%= link_to "Profile", user_profiles_path %></a></li>
             <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>        
           </ul>
         </li>        

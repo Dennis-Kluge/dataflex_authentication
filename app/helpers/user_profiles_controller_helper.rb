@@ -1,0 +1,2 @@
+module UserProfilesControllerHelper
+end

@@ -1,0 +1,7 @@
+<div class="row">
+  <h1>Profil anlegen</h1>
+</div>
+
+<%= form_for @profile, url: {action: "create"} do |f| %>
+  <%= render :partial => "form", :object => @profile %>
+<% end ->

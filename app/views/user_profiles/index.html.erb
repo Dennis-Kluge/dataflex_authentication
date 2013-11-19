@@ -1,0 +1,23 @@
+<div class="row">
+  <h1>Profil</h1>
+</div>
+
+  <% unless @profile %>
+    <div class="row">
+      <p>Dein Profil ist leer leg einfach ein <%= link_to "neues", new_user_profile_path %> an.</p>
+    </div>
+  <% else -%>  
+    <div class="row">
+      <div class="large-6 columns">
+        <div class="panel">
+          <h5>Telefonnummer</h5>
+          <%= content_tag :p, @profile.telephone_number %>
+          <h5>Lebenslauf</h5>
+          <%= content_tag :p, @profile.biography %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <%= link_to "Editieren", edit_user_profile_path(@profile), class: "button alert small" %>
+    </div>
+  <% end -%>
