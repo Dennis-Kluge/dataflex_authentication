@@ -3,5 +3,5 @@
 </div>
 
 <%= form_for @profile, url: {action: "create"} do |f| %>
-  <%= render :partial => "form", :object => @profile %>
-<% end ->
+  <%= render :partial => "form", :object => @profile, :locals=> { :f=> f}  %>
+<% end -%>
